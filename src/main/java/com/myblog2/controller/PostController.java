@@ -28,6 +28,7 @@ public class PostController {
     public ResponseEntity<Object> createPost(@Valid @RequestBody PostDto postDto,
                                               BindingResult result){
 
+        
         if (result.hasErrors()){
             return new ResponseEntity<>(result.getFieldError().getDefaultMessage(),HttpStatus.INTERNAL_SERVER_ERROR);
         }

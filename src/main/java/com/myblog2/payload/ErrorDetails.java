@@ -15,8 +15,6 @@ public class ErrorDetails {
     }
 
     public Date getTimestamp() {
-
-
         return timestamp;
     }
 
